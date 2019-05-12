@@ -10,6 +10,7 @@ body {font-family: Arial;}
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
+  width: auto;
 }
 
 /* Style the buttons inside the tab */
@@ -49,15 +50,16 @@ body {font-family: Arial;}
 <p>Click on the text to explore more about SpaceX and the Falcon Heavy:</p>
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'his')">SpaceX History</button>
+  <button class="tablinks" onclick="openCity(event, 'reu')">Reusability</button>
   <button class="tablinks" onclick="openCity(event, 'fal')">Falcon</button>
   <button class="tablinks" onclick="openCity(event, 'mer')">Merlin Engine</button>
-  <button class="tablinks" onclick="openCity(event, 'boo')">First Stage</button>
   <button class="tablinks" onclick="openCity(event, 'cor')">Core</button>
+  <button class="tablinks" onclick="openCity(event, 'boo')">First Stage</button>
+
   <button class="tablinks" onclick="openCity(event, 'pay')">Payload</button>
 </div>
 
-<div id="his" class="tabcontent">
+<div id="reu" class="tabcontent">
   <h3>The Beginning</h3>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/VC25Wqo09_8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <p>Elon Musk talks about how he attempted to buy Russian ICBMs to launch his greenhouse projects. The deal was not in his favor so he decided to start building his own rockets.</p>
@@ -66,7 +68,7 @@ body {font-family: Arial;}
 <div id="fal" class="tabcontent">
   <h3>Core</h3>
   <img src="https://target.scene7.com/is/image/Target/GUEST_f5d0cfc3-9d02-4ee0-a6c6-ed5dc09971d1?wid=488&hei=488&fmt=pjpeg" alt="Italian Trulli">
-  <p>Paris is the capital of France.</p> 
+  <p>Paris is the capital of France.</p>
 </div>
 
 <div id="mer" class="tabcontent">
@@ -75,17 +77,19 @@ body {font-family: Arial;}
   <p>Tokyo is the capital of Japan.</p>
 </div>
 
+<div id="cor" class="tabcontent">
+  <h3>Core</h3>
+  <img src="https://target.scene7.com/is/image/Target/GUEST_f5d0cfc3-9d02-4ee0-a6c6-ed5dc09971d1?wid=488&hei=488&fmt=pjpeg" alt="Italian Trulli">
+  <p>Paris is the capital of France.</p>
+</div>
+
 <div id="boo" class="tabcontent">
   <h3>Boosters</h3>
   <img src="https://target.scene7.com/is/image/Target/GUEST_f5d0cfc3-9d02-4ee0-a6c6-ed5dc09971d1?wid=488&hei=488&fmt=pjpeg" alt="Italian Trulli">
   <p>London is the capital city of England.</p>
 </div>
 
-<div id="cor" class="tabcontent">
-  <h3>Core</h3>
-  <img src="https://target.scene7.com/is/image/Target/GUEST_f5d0cfc3-9d02-4ee0-a6c6-ed5dc09971d1?wid=488&hei=488&fmt=pjpeg" alt="Italian Trulli">
-  <p>Paris is the capital of France.</p> 
-</div>
+
 
 <div id="pay" class="tabcontent">
   <h3>Payload</h3>
@@ -109,6 +113,6 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 </script>
-   
+
 </body>
-</html> 
+</html>

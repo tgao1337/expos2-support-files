@@ -22,7 +22,7 @@
 var xhr = new XMLHttpRequest();
 xhr.open('GET', "https://api.spacexdata.com/v3/launches?filter=rocket,details,mission_name,upcoming,launch_year,launch_site", true);
 xhr.send();
- 
+
 xhr.onreadystatechange = processRequest;
 
 
@@ -42,7 +42,7 @@ function processRequest(e) {
         var nflights = "";
         for(var i = 0; i < response.length; i++) {
     		var obj = response[i];
-		
+
         	if (obj.rocket.rocket_id == "falconheavy" && !obj.upcoming){
             	str = str + "<strong>" + obj.mission_name + "</strong> : " + obj.details + "<br><br>";
         		//console.log(obj.mission_name);
@@ -55,12 +55,12 @@ function processRequest(e) {
                 else {
                 	nflights = nflights + "<strong>" + obj.mission_name + "</strong> : Sometime " + obj.launch_year + "<br><br>";
                 }
-                
+
         		//console.log(obj.mission_name);
     			//console.log(obj.rocket.rocket_id);
                 console.log(obj);
             }
-            
+
 		}
         //console.log(response.earth_distance_km);
         //console.log(response.speed_kph);
