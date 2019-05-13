@@ -3,7 +3,10 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {font-family: Arial;}
+body {
+  font-family: Arial;
+  padding-left: 10px;
+}
 
 /* Style the tab */
 .tab {
@@ -87,47 +90,58 @@ body {font-family: Arial;}
 
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'reu')">Reusability</button>
+  <button class="tablinks" onclick="openCity(event, 'man')">Manufacture</button>
   <button class="tablinks" onclick="openCity(event, 'fal')">Falcon</button>
   <button class="tablinks" onclick="openCity(event, 'mer')">Merlin Engines</button>
   <button class="tablinks" onclick="openCity(event, 'cor')">Core</button>
-  <button class="tablinks" onclick="openCity(event, 'boo')">First Stage</button>
+  <button class="tablinks" onclick="openCity(event, 'boo')">Side Boosters</button>
 
   <button class="tablinks" onclick="openCity(event, 'pay')">Payload</button>
 </div>
 
 <div id="reu" class="tabcontent">
   <h3>Reusability</h3>
-  <p>Reusability is key.</p>
+  <p class="scaleimg">Reusability is the key concept behind the SpaceX rocket designs. Being able to use a rocket over and over translates into a cheaper launch price of the rocket. Most rockets are built to be one use, but reusable rockets cost less. The Falcon 9 is very popular as it launches a rocket and lands the first stage upright. The Falcon Heavy replicates this task but thrice a mission. By landing rockets and reusing them, SpaceX does not have to produce more rocket bodies, making it cheaper.</p>
   <img class="shrinkimg" src="3b49tjtee4321.png" alt="Titanium Grid Fins">
 
-  <p>Reusability is key.</p>
+  <p class="scaleimg">The titanium grid fins seen above allow the rocket to be steered on the way back to land. Controlling the descent of the rocket allows it to land accurately on the landing pad or on a drone ship. Originally the grid fins were aluminium, the titanium ones were used because it can be used over and over. Each landing fin is fabricated from a single piece of titanium and about as tall as a person, making it costly if not reused. </p>
 
   <img class="scaleimg" src="https://live.staticflickr.com/5450/29255027104_f9eca8bc23_b.jpg" alt="Landing legs">
-  <p>Reusability is key.</p>
+  <p class="scaleimg">The landing legs are also essential for landing a rocket. They were designed in a way that minimized drag on the way up and on the way down, they can fold out and allow the rocket to have a greater base to land on.</p>
+</div>
+
+<div id="man" class="tabcontent">
+  <h3>Manufacturing</h3>
+
+
+  <p class="scaleimg">Before SpaceX, agencies such as the National Aeronautics and Space Administration (NASA) bought engines, computers, control systems, and sensors from other companies, who had to buy smaller components from their suppliers. Each chain of company had to sell their products at a mark up to be profitable. As this goes through the supply chain, the extra cost adds up to become expensive. At the top of the chain, NASA had to hire people to figure out how to assemble all the components together. SpaceX on the other hand, utilizes an old process called vertical integration, where they create most of their own components from scratch. As a result of creating most components, the parts were created specifically for each other. The in-house development ensured that the production line was fast and reliable since they are experts on those parts (Greg). Although it allows SpaceX to create cheaper parts, it is risky if one step is not completed, the rocket would not become completed. In his essay, Platforms, Steven Johnson discusses how innovations are created upon platforms that provide the basis for new innovations. He states, “[M]odern scientific paradigms are rarely overthrown. Instead, they are built upon. They create a platform that supports new paradigms above them,” (Johnson, 117). In this sense, SpaceX used the vertical integration concept as a platform to manufacture their own rockets.
+  </p>
+  <img class="scaleimg" src="https://cdn.corporatefinanceinstitute.com/assets/Vertical-Integration.png" alt="Vertical integration">
+
 </div>
 
 <div id="fal" class="tabcontent">
   <h3>Falcon</h3>
   <img class="shrinkimg" src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Falcon_9_rolling_out_to_pad_for_test_fire_-_CRS-2_%28KSC-2013-1679%29.jpg" alt="Falcon 9 roll out">
-  <p>Paris is the capital of France.</p>
+  <p class="scaleimg">The Falcon Heavy is three Falcon 9 rockets strapped together. Without perfecting the Falcon 9, it was difficult to produce the Falcon Heavy. The Falcon Heavy has been delayed over five years before it's first launch, largely due to the fact that the Falcon 9 was still going through upgrades. The Falcon 9 rocket served as a platform for the Falcon Heavy as well since it takes an already proven concept and replicates it on a larger scale with the Falcon Heavy.</p>
 </div>
 
 <div id="mer" class="tabcontent">
   <h3>Engines</h3>
   <img class="shrinkimg" src="https://pbs.twimg.com/media/D3kJOrPUIAA6Kqs.jpg" alt="Falcon Heavy engines">
-  <p>Tokyo is the capital of Japan.</p>
+  <p class="scaleimg">SpaceX created many iterations of the Merlin engine, before finalizing the Merlin 1D engine. The engines use liquid propellant which is dense in energy. The Merlin engine is one of the most efficient rocket engines ever created. Twenty seven of these engines are on the bottom of a Falcon Heavy and one engine at the top for the second stage. SpaceX have become very efficient at producing these engines and produce a few hundred engines a year.</p>
 </div>
 
 <div id="cor" class="tabcontent">
   <h3>Core</h3>
   <img class="scaleimg" src="https://upload.wikimedia.org/wikipedia/commons/7/70/Pad_39_A_Falcon_Heavy_Artist_Cropped.jpg" alt="Falcon Heavy image">
-  <p>Paris is the capital of France.</p>
+  <p class="scaleimg">The center booster is referred to as the core. It is in the middle and taller than the side boosters. This is because it carries more fuel and it also carries the second stage. The second stage holds the payload and has its own engine for operation in orbit. With the core booster firing its engines longer than the side boosers, it must land at sea on a drone ship. Of the two Falcon Heavy missions so far, only one booster successfully landed, but it was later lost at sea during a storm.</p>
 </div>
 
 <div id="boo" class="tabcontent">
   <h3>Side Boosters</h3>
   <img class="shrinkimg" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Falcon_Heavy_Side_Boosters_landing_on_LZ1_and_LZ2_-_2018_%2825254688767%29.jpg" alt="Side boosters landing">
-  <p>London is the capital city of England.</p>
+  <p class="scaleimg">The side boosters are reused boosters from Falcon 9 launches. They land at Landing Zong 1 and 2 after the Falcon Heavy launches and of the two Falcon Heavy missions so far, all four side boosters landed successfully. The side boosters do not land exactly at the same time to avoid the risk of one booster interfering with the other booster's radar system.</p>
 </div>
 
 
@@ -135,7 +149,7 @@ body {font-family: Arial;}
 <div id="pay" class="tabcontent">
   <h3>Payload</h3>
   <img class="scaleimg" src="https://upload.wikimedia.org/wikipedia/commons/8/87/Elon_Musk%27s_Tesla_Roadster_%2840143096241%29.jpg" alt="Starman with Earth in the background">
-  <p>Tokyo is the capital of Japan.</p>
+  <p class="scaleimg">Tokyo is the capital of Japan.</p>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/A0FZIwabctw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <br>
 
@@ -145,7 +159,7 @@ body {font-family: Arial;}
 
   <!-- <button class="tablinks" onclick="openCity(event, 'rodstr')">Roadster location data</button> -->
   <br>
-  <button type="button" name="button" onclick="openCity(event, 'rodstr')" class="tbuttons">Roadster location data</button>
+  <button type="button" name="button" onclick="openCity(event, 'rodstr')" class="tbuttons">Roadster location</button>
 </div>
 
 
